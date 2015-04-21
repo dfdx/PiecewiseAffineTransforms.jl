@@ -1,5 +1,10 @@
 module PiecewiseAffineTransforms
 
-# package code goes here
+export PAWarpParams,
+       pa_warp_params,
+       pa_warp
+       
 
-end # module
+include("core.jl")
+
+end
