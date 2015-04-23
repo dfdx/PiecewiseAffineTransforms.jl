@@ -12,6 +12,7 @@ type PAWarpParams
                                        #   corrsponding triangle in warp_map
 end
 
+
 function pa_warp_params(shape::Matrix{Float64}, trigs::Matrix{Int},
                         dst_size::@compat(Tuple{Int, Int}))
     h, w = dst_size
@@ -83,8 +84,9 @@ function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
 
                 if wi < 1 || wi > size(src_img, 1) ||
                     wj < 1 || wj > size(src_img, 2)
-                    throw(BoundsError("Warp pixel is out of bounds: " *
-                                      "wi=$wi, wj=$wj"))
+                    # throw(@compat(BoundsError("Warp pixel is out of bounds: " *
+                    #                   "wi=$wi, wj=$wj")))
+                    throw(BoundsError())
                 end
 
                 lli = convert(Int, floor(wi))
@@ -108,7 +110,7 @@ function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
                         dst_img[i, j, c] =
                             src_img[convert(Int, wi), convert(Int, wj), c]
                     else
-                        throw("Unknown interpolation type: $interp")
+                        error("Unknown interpolation type: $interp")
                     end
                 end 
             end            
