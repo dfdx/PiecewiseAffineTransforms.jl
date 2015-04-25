@@ -15,10 +15,10 @@ Say, we have an image of a face and want to warp it to have different expression
 <table>
   <tr>
     <td>
-![cootes-src](https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0764.bmp)
+      <img src="https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0764.bmp"/>
     </td>
     <td>
-      ![cootes-dst](https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0779.bmp)
+      <img src="https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0779.bmp"/>
     </td>
   </tr>
 </table>
