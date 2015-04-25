@@ -11,7 +11,7 @@ using FixedPointNumbers
 
 const IMG_HEIGHT = 480
 package_dir = joinpath(Pkg.dir(), "PiecewiseAffineTransforms")
-data_dir = joinpath(package_dir, "examples", "data")
+data_dir = joinpath(package_dir, "examples", "cootes")
 
 # some auxilary functions for reading data
 rawdata(img) = convert(Array{Float64, 3}, data(separate(img)))
