@@ -1,6 +1,6 @@
 The PiecewiseAffineTransforms.jl package is licensed under the MIT "Expat" License:
 
-> Copyright (c) 2015: dfdx.
+> Copyright (c) 2015: Andrei Zhabinski.
 >
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the

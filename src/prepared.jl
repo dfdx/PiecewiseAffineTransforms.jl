@@ -107,8 +107,8 @@ function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
                                         src_img[uri, urj, c] * f3)
                         dst_img[i, j, c] = interpolated
                     elseif interp == :nearest
-                        dst_img[i, j, c] =
-                            src_img[convert(Int, wi), convert(Int, wj), c]
+                        dst_img[i, j, c] = src_img[convert(Int, round(wi)),
+                                                   convert(Int, round(wj)), c]
                     else
                         error("Unknown interpolation type: $interp")
                     end
