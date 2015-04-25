@@ -78,7 +78,21 @@ But if you are going to repeat warping to `dst_shape` for many source images or 
 
 But anyway, they both give (almost) the same result: 
 
-<img src="https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/processed/warped_prepared.png" style="width: 300px"/>
+<table>
+  <thead>
+    <tr><td>Original image</td><td>Warped image</td></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src="https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0764.bmp"/>
+      </td>
+      <td>
+        <img src="https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/processed/warped_prepared.png"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Acknowledgement
