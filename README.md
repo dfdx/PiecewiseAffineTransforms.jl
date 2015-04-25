@@ -48,6 +48,8 @@ First of all, we need to split the shapes into triangles, i.e. triangulate them:
     triplot(src_img, src_shape, trigs)
     triplot(dst_img, dst_shape, trigs)
 
+**WARNING:** Triangulation is based on [VoronoiDelaunay.jl](https://github.com/JuliaGeometry/VoronoiDelaunay.jl/), which currently has a [bug](https://github.com/JuliaGeometry/VoronoiDelaunay.jl/issues/6) resulting in one lost triangle from time to time. To overcome, just get good sample of triangulation and save it for future use. 
+
 <table>
   <thead>
     <tr><td>Source shape</td><td>Destination shape</td></tr>
