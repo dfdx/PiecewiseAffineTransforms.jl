@@ -14,7 +14,7 @@ Say, we have an image of a face and want to warp it to have different expression
 
 Source image | Destination image
 --------------------------------
-![cootes](https://github.com/dfdx/PiecewiseAffineTransforms.jl/tree/master/examples/cootes/107_0764.bmp) | ![cootes](https://github.com/dfdx/PiecewiseAffineTransforms.jl/tree/master/examples/cootes/107_0779.bmp)
+![cootes-src](https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0764.bmp) | ![cootes-dst](https://raw.githubusercontent.com/dfdx/PiecewiseAffineTransforms.jl/master/examples/cootes/107_0764.bmp)
 
 
 
