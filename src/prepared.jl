@@ -52,7 +52,7 @@ end
 function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
                     src_shape::Matrix{Float64};
                     interp=:bilinear)
-    nc = N
+    nc = size(src_img, 3)
     h, w = params.dst_size
     warp_map = params.warp_map
     alpha_coords, beta_coords = params.alpha_coords, params.beta_coords
@@ -116,6 +116,7 @@ function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
             end            
         end
     end
-    return dst_img
+    # for 2D images, fix dimensions
+    return squeeze(dst_img, N+1)
 end
 
