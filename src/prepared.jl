@@ -39,7 +39,7 @@ function pa_warp_params(shape::Matrix{Float64}, trigs::Matrix{Int},
                     warp_map[i, j] = k
                     alpha_coords[i, j] = alpha
                     beta_coords[i,j] = beta
-                    break;
+                    break
                 end
             end
         end
