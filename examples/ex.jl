@@ -6,7 +6,7 @@ using ImageView
 using MAT
 using VoronoiDelaunay
 using PiecewiseAffineTransforms
-using Color
+using Colors
 using FixedPointNumbers
 
 const IMG_HEIGHT = 480
