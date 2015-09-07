@@ -17,7 +17,7 @@ data_dir = joinpath(package_dir, "examples", "cootes")
 rawdata(img) = convert(Array{Float64, 3}, data(separate(img)))
 xy2ij(shape, height) = [height .- shape[:, 2] shape[:, 1]]
 
-read_image(path) = rawdata(imread(path))
+read_image(path) = rawdata(convert(Image{RGB{U8}}, imread(path)))
 read_shape(path) = xy2ij(matread(path)["annotations"], IMG_HEIGHT)
 
 
