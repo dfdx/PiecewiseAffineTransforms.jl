@@ -118,7 +118,7 @@ function pa_warp{T,N}(params::PAWarpParams, src_img::Array{T,N},
     end
     # for 2D images, fix dimensions
     if N == 2
-        dst_img = squeeze(dst_img[3])
+        dst_img = squeeze(dst_img, (3,))
     end
     return dst_img
 end
