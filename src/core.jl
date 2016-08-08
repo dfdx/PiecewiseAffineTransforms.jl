@@ -2,7 +2,6 @@
 using Compat
 using VoronoiDelaunay
 using Images
-using ImageView
 
 include("triang.jl")
 include("polyline.jl")
