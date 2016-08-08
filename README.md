@@ -47,6 +47,7 @@ First of all, we need to split the shapes into triangles, i.e. triangulate them:
 
     trigs = delaunayindexes(src_shape)  # Tx3 matrix of Int, where T is
                                         #  a number of resuling triangles
+    # needs ImageView installed (Pkg.add("ImageView"))
     triplot(src_img, src_shape, trigs)
     triplot(dst_img, dst_shape, trigs)
 
